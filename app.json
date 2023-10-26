@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "bubbleTea",
+    "slug": "bubbleTea",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/main.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/Welcome.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#4FB8E9"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow $(PRODUCT_NAME) to save photos."
+      },
+      "bundleIdentifier": "n"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/main.png",
+        "backgroundColor": "#4FB8E9"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.WRITE_MEDIA_IMAGES"
+      ],
+      "package": "com.atheshamuddin.bubbleTea"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d854edaf-14c5-4a98-a5d2-212f516953f9"
+      }
+    }
+  }
+}
