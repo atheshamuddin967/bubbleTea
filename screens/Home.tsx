@@ -54,7 +54,6 @@ function Home() {
           style={{
             flex: 1,
             paddingBottom: 10,
-            marginRight: 10,
           }}
           numColumns={2}
           showsVerticalScrollIndicator={false}
